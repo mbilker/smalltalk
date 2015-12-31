@@ -1,6 +1,7 @@
 Smalltalk [![License][LicenseIMGURL]][LicenseURL] [![NPM version][NPMIMGURL]][NPMURL] [![Dependency Status][DependencyStatusIMGURL]][DependencyStatusURL] [![Build Status][BuildStatusIMGURL]][BuildStatusURL]
 ====
 _Modified for N1_
+**You must change the `nylas://` link in `smalltalk.css` for this to work in plugins**
 
 Simple [Promise](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Promise)-based replacement of native Alert, Confirm and Prompt.
 
@@ -14,7 +15,7 @@ bower install smalltalk
 Or npm:
 
 ```
-npm i smalltalk
+npm i git+https://github.com/mbilker/smalltalk.git
 ```
 
 # API
@@ -34,9 +35,9 @@ for preventing of handling cancel event.
 
 ```js
 smalltalk.alert('Error', 'There was an error!').then(function() {
-    console.log('ok');
+  console.log('ok');
 }, function() {
-    console.log('cancel');
+  console.log('cancel');
 });
 ```
 
@@ -46,9 +47,9 @@ smalltalk.alert('Error', 'There was an error!').then(function() {
 
 ```js
 smalltalk.confirm('Question', 'Are you sure?').then(function() {
-    console.log('yes');
+  console.log('yes');
 }, function() {
-    console.log('no');
+  console.log('no');
 });
 ```
 
@@ -58,9 +59,9 @@ smalltalk.confirm('Question', 'Are you sure?').then(function() {
 
 ```js
 smalltalk.prompt('Question', 'How old are you?', '10').then(function(value) {
-    console.log(value);
+  console.log(value);
 }, function() {
-    console.log('cancel');
+  console.log('cancel');
 });
 ```
 
