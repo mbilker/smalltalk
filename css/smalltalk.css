@@ -3,17 +3,17 @@
     display: -moz-box;
     display: -ms-flexbox;
     display: flex;
-    
+
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    
+
     -webkit-transition: 200ms opacity;
     -moz-transition: 200ms opacity;
     -ms-transition: 200ms opacity;
     -o-transition: 200ms opacity;
     transition: 200ms opacity;
-    
+
     bottom: 0;
     left: 0;
     overflow: auto;
@@ -21,7 +21,7 @@
     position: fixed;
     right: 0;
     top: 0;
-    
+
     z-index: 100;
 }
 
@@ -43,7 +43,7 @@
 }
 
 .smalltalk .page > .close-button {
-    background-image: url(../img/IDR_CLOSE_DIALOG.png);
+    background-image: url(nylas://email-pgp/images/IDR_CLOSE_DIALOG.png);
     background-position: center;
     background-repeat: no-repeat;
     height: 14px;
@@ -55,7 +55,7 @@
 }
 
 .smalltalk .page > .close-button:hover {
-    background-image: url(../img/IDR_CLOSE_DIALOG_H.png);
+    background-image: url(nylas://email-pgp/images/IDR_CLOSE_DIALOG_H.png);
 }
 
 .smalltalk .page header {
@@ -63,7 +63,7 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     max-width: 500px;
-    
+
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -79,7 +79,7 @@
 .smalltalk .page .content-area {
     overflow: hidden;
     text-overflow: ellipsis;
-    
+
     padding: 6px 17px 6px;
     position: relative;
     max-width: 500px;
@@ -94,7 +94,7 @@
     display: -moz-box;
     display: -ms-flexbox;
     display:flex;
-    
+
     flex-direction: row;
     justify-content: flex-end;
 }
@@ -120,7 +120,7 @@
     background-image: -moz-linear-gradient(#e7e7e7, #e7e7e7 38%, #d7d7d7);
     background-image: -ms-linear-gradient(#e7e7e7, #e7e7e7 38%, #d7d7d7);
     background-image: linear-gradient(#e7e7e7, #e7e7e7 38%, #d7d7d7);
-    
+
     box-shadow: none;
     text-shadow: none;
 }
@@ -139,17 +139,17 @@
     -moz-appearance: none;
     -ms-appearance: none;
     appearance: none;
-    
+
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    
+
     background-image: -webkit-linear-gradient(#ededed, #ededed 38%, #dedede);
     background-image: -moz-linear-gradient(#ededed, #ededed 38%, #dedede);
     background-image: -ms-linear-gradient(#ededed, #ededed 38%, #dedede);
     background-image: linear-gradient(#ededed, #ededed 38%, #dedede);
-    
+
     border: 1px solid rgb(0, 0, 0);
     border: 1px solid rgba(0, 0, 0, 0.25);
     border-radius: 2px;
