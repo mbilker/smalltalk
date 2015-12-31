@@ -30,7 +30,7 @@ for preventing of handling cancel event.
 
 ## smalltalk.alert(title, message [, options])
 
-![Alert](https://raw.githubusercontent.com/coderaiser/smalltalk/master/screen/alert.png "Alert")
+![Alert](https://raw.githubusercontent.com/mbilker/smalltalk/master/screen/alert.png "Alert")
 
 ```js
 smalltalk.alert('Error', 'There was an error!').then(function() {
@@ -42,7 +42,7 @@ smalltalk.alert('Error', 'There was an error!').then(function() {
 
 ## smalltalk.confirm(title, message [, options])
 
-![Confirm](https://raw.githubusercontent.com/coderaiser/smalltalk/master/screen/confirm.png "Confirm")
+![Confirm](https://raw.githubusercontent.com/mbilker/smalltalk/master/screen/confirm.png "Confirm")
 
 ```js
 smalltalk.confirm('Question', 'Are you sure?').then(function() {
@@ -54,7 +54,7 @@ smalltalk.confirm('Question', 'Are you sure?').then(function() {
 
 ## smalltalk.prompt(title, message, value [, options])
 
-![Prompt](https://raw.githubusercontent.com/coderaiser/smalltalk/master/screen/prompt.png "Prompt")
+![Prompt](https://raw.githubusercontent.com/mbilker/smalltalk/master/screen/prompt.png "Prompt")
 
 ```js
 smalltalk.prompt('Question', 'How old are you?', '10').then(function(value) {
@@ -68,10 +68,10 @@ smalltalk.prompt('Question', 'How old are you?', '10').then(function(value) {
 MIT
 
 [NPMIMGURL]:                https://img.shields.io/npm/v/smalltalk.svg?style=flat
-[BuildStatusIMGURL]:        https://img.shields.io/travis/coderaiser/smalltalk/master.svg?style=flat
-[DependencyStatusIMGURL]:   https://img.shields.io/gemnasium/coderaiser/smalltalk.svg?style=flat
+[BuildStatusIMGURL]:        https://img.shields.io/travis/mbilker/smalltalk/master.svg?style=flat
+[DependencyStatusIMGURL]:   https://img.shields.io/gemnasium/mbilker/smalltalk.svg?style=flat
 [LicenseIMGURL]:            https://img.shields.io/badge/license-MIT-317BF9.svg?style=flat
 [NPMURL]:                   https://npmjs.org/package/smalltalk "npm"
-[BuildStatusURL]:           https://travis-ci.org/coderaiser/smalltalk  "Build Status"
-[DependencyStatusURL]:      https://gemnasium.com/coderaiser/smalltalk "Dependency Status"
+[BuildStatusURL]:           https://travis-ci.org/mbilker/smalltalk  "Build Status"
+[DependencyStatusURL]:      https://gemnasium.com/mbilker/smalltalk "Dependency Status"
 [LicenseURL]:               https://tldrlegal.com/license/mit-license "MIT License"
