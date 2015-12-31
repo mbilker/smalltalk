@@ -61,11 +61,11 @@
       var cancel;
 
       let promise = new Promise((resolve, reject) => {
-        let noCancel    = options && !options.cancel;
-        let empty       = () => {};
+        let noCancel = options && !options.cancel;
+        let empty = () => {};
 
-        ok      = resolve;
-        cancel  = reject;
+        ok = resolve;
+        cancel = reject;
 
         if (noCancel) {
           cancel = empty;
@@ -77,7 +77,7 @@
       dialog.innerHTML = tmpl;
       dialog.className = 'smalltalk';
 
-      document.body.appendChild(dialog);
+      document.getElementById('sheet-container').appendChild(dialog);
 
       find(dialog, ['ok', 'input']).forEach(el => {
         el.focus();
