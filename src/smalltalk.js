@@ -22,6 +22,13 @@
       return showDialog(title, msg, valueStr, BUTTON_OK_CANCEL, options);
     };
 
+    this.passphrase = (title, msg, value, options) => {
+      let val = value || '';
+      let valueStr = `<input type="passwprd" value="${val}" data-name="js-input">`;
+
+      return showDialog(title, msg, valueStr, BUTTON_OK_CANCEL, options);
+    };
+
     this.confirm = (title, msg, options) => {
       return showDialog(title, msg, '', BUTTON_OK_CANCEL, options);
     };
@@ -162,7 +169,7 @@
     }
 
     function changeButtonFocus(dialog, names) {
-      let name = '';
+      var name = '';
       let active = document.activeElement;
       let activeName = getDataName(active);
       let isButton = /ok|cancel/.test(activeName);
@@ -175,7 +182,7 @@
           name = 'cancel';
         }
 
-        find(dialog, [name]).forEach(el => {
+        find(dialog, [name]).forEach((el) => {
           el.focus();
         });
       }
@@ -202,13 +209,12 @@
     }
 
     function closeDialog(el, dialog, ok, cancel) {
-      var value;
       let name = el.getAttribute('data-name').replace('js-', '');
 
       if (/close|cancel/.test(name)) {
         cancel();
       } else {
-        value = find(dialog, ['input']).reduce((value, el) => {
+        let value = find(dialog, ['input']).reduce((value, el) => {
           return el.value;
         }, null);
 
@@ -219,9 +225,9 @@
     }
 
     function find(element, names) {
-      let elements = names.map(name => {
-        return element.querySelector(`[data-name="js-${ name }"]`);
-      }).filter(el => {
+      let elements = names.map((name) => {
+        return element.querySelector(`[data-name="js-${name}"]`);
+      }).filter((el) => {
         return el;
       });
 
@@ -229,7 +235,7 @@
     }
 
     function addListeterAll(event, parent, elements, fn) {
-      find(parent, elements).forEach(el => {
+      find(parent, elements).forEach((el) => {
         return el.addEventListener(event, fn);
       });
     }
