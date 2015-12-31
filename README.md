@@ -2,7 +2,7 @@ Smalltalk [![License][LicenseIMGURL]][LicenseURL] [![NPM version][NPMIMGURL]][NP
 ====
 _Modified for N1_
 
-**You must change the `nylas://` link in `smalltalk.css` for this to work in plugins**
+**You must change the `nylas://` link in `smalltalk.css` for this to work in plugins.**
 **In addition, you must copy `smalltalk.css` to your plugin's `stylesheets` directory.**
 
 
