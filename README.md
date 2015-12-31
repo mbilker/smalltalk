@@ -9,13 +9,7 @@ _Modified for N1_
 Simple [Promise](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Promise)-based replacement of native Alert, Confirm and Prompt.
 
 # Install
-With help of [bower](http://bower.io "Bower").
-
-```
-bower install smalltalk
-```
-
-Or npm:
+With help of npm:
 
 ```
 npm i git+https://github.com/mbilker/smalltalk.git
