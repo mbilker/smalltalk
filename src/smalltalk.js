@@ -24,7 +24,7 @@
 
     this.passphrase = (title, msg, value, options) => {
       let val = value || '';
-      let valueStr = `<input type="passwprd" value="${val}" data-name="js-input">`;
+      let valueStr = `<input type="password" value="${val}" data-name="js-input">`;
 
       return showDialog(title, msg, valueStr, BUTTON_OK_CANCEL, options);
     };
