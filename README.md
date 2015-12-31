@@ -3,6 +3,8 @@ Smalltalk [![License][LicenseIMGURL]][LicenseURL] [![NPM version][NPMIMGURL]][NP
 _Modified for N1_
 
 **You must change the `nylas://` link in `smalltalk.css` for this to work in plugins**
+**In addition, you must copy `smalltalk.css` to your plugin's `stylesheets` directory.**
+
 
 Simple [Promise](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Promise)-based replacement of native Alert, Confirm and Prompt.
 
