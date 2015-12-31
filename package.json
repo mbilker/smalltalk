@@ -7,7 +7,7 @@
     "type": "git",
     "url": "git://github.com/coderaiser/smalltalk.git"
   },
-  "main": "dist/smalltalk.min.js",
+  "main": "src/smalltalk.js",
   "config": {
     "poly": "node_modules/promise-polyfill/Promise.min.js"
   },
