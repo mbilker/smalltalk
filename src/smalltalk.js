@@ -34,14 +34,14 @@
       var val = value || {};
       var valueStr = '<select data-name="js-select">';
 
-      for (var name in value) {
+      for (var name in val) {
         valueStr += `<option value="${name}">${value[name]}</option>`;
       }
 
       valueStr += '</select>';
 
       return showDialog(title, msg, valueStr, BUTTON_OK_CANCEL, options);
-    }
+    };
 
     this.confirm = (title, msg, options) => {
       return showDialog(title, msg, '', BUTTON_OK_CANCEL, options);
