@@ -96,7 +96,7 @@
 }
 
 /* .smalltalk button:enabled:focus, */
-.smalltalk input:enabled:focus {
+.smalltalk input:enabled:focus, .smalltalk select:enabled:focus {
   -webkit-transition: border-color 200ms;
   transition: border-color 200ms;
   border-color: rgb(77, 144, 254);
@@ -108,7 +108,7 @@
   min-width: 4em;
 }
 
-.smalltalk input {
+.smalltalk input, .smalltalk select {
   width: 100%;
   border: 1px solid #bfbfbf;
   border-radius: 2px;

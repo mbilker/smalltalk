@@ -29,6 +29,20 @@
       return showDialog(title, msg, valueStr, BUTTON_OK_CANCEL, options);
     };
 
+    // TODO: currently only works using arrow keys. Needs looking into.
+    this.dropdown = (title, msg, value, options) => {
+      var val = value || {};
+      var valueStr = '<select data-name="js-select">';
+
+      for (var name in value) {
+        valueStr += `<option value="${name}">${value[name]}</option>`;
+      }
+
+      valueStr += '</select>';
+
+      return showDialog(title, msg, valueStr, BUTTON_OK_CANCEL, options);
+    }
+
     this.confirm = (title, msg, options) => {
       return showDialog(title, msg, '', BUTTON_OK_CANCEL, options);
     };
@@ -86,7 +100,7 @@
 
       document.getElementById('sheet-container').appendChild(dialog);
 
-      find(dialog, ['ok', 'input']).forEach(el => {
+      find(dialog, ['ok', 'input', 'select']).forEach(el => {
         el.focus();
       });
 
@@ -100,7 +114,7 @@
 
       ['click', 'contextmenu'].forEach((event) => {
         dialog.addEventListener(event, () => {
-          find(dialog, ['ok', 'input']).forEach((el) => {
+          find(dialog, ['ok', 'input', 'select']).forEach((el) => {
             el.focus();
           });
         });
@@ -126,7 +140,7 @@
         let keyCode = event.keyCode;
         let el = event.target;
 
-        let namesAll = ['ok', 'cancel', 'input'];
+        let namesAll = ['ok', 'cancel', 'input', 'select'];
         let names = find(dialog, namesAll).map((el) => {
           return getDataName(el);
         });
@@ -175,7 +189,7 @@
       let isButton = /ok|cancel/.test(activeName);
       let count = names.length - 1;
 
-      if (activeName !== 'input' && count && isButton) {
+      if (activeName !== 'input' && activeName !== 'select' && count && isButton) {
         if (activeName === 'cancel') {
           name = 'ok';
         } else {
@@ -214,7 +228,7 @@
       if (/close|cancel/.test(name)) {
         cancel();
       } else {
-        let value = find(dialog, ['input']).reduce((value, el) => {
+        let value = find(dialog, ['input', 'select']).reduce((value, el) => {
           return el.value;
         }, null);
 
